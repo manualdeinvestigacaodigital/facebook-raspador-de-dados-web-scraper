@@ -4,6 +4,14 @@
 
 <h1 align="center">Raspador (WebScraper) de Dados e Mensagens do Facebook</h1>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/status-estável-success">
+  <img src="https://img.shields.io/badge/version-v1.0-blue">
+  <img src="https://img.shields.io/badge/platform-Chrome-lightgrey">
+  <img src="https://img.shields.io/badge/focus-OSINT-orange">
+  <img src="https://img.shields.io/badge/license-Uso%20educacional-important">
+</p>
+
 ---
 
 <h2 align="center">🎬 Demonstração de Uso da Ferramenta</h2>
@@ -24,9 +32,9 @@
 
 ---
 
-## 🔎 RASPADOR (WEBSCRAPER) DE DADOS E MENSAGENS DO FACEBOOK
+# 🔎 RASPADOR (WEBSCRAPER) DE DADOS E MENSAGENS DO FACEBOOK
 
-Ferramenta baseada em extensão para navegador desenvolvida para coleta estruturada de dados da plataforma Facebook, voltada a investigação digital, inteligência e OSINT.
+Ferramenta baseada em extensão para navegador desenvolvida para coleta estruturada de dados da plataforma Facebook, voltada à investigação digital, inteligência e OSINT.
 
 A aplicação permite extrair metadados completos de postagens, informações da página, conteúdos multimídia, comentários e interações, organizando os dados de forma estruturada para análise e exportação.
 
@@ -34,212 +42,347 @@ O sistema atua diretamente no ambiente do navegador, realizando leitura do DOM d
 
 ---
 
-## ⚙️ PREPARAÇÃO DO AMBIENTE
+# ⚙️ FASE 1 — PREPARAÇÃO DO AMBIENTE
 
 Antes de utilizar a ferramenta, é necessário possuir:
 
-🟢 Navegador Google Chrome (ou baseado em Chromium)  
-🟢 Acesso à plataforma Facebook  
-🟢 Permissão para instalar extensões em modo desenvolvedor  
+- 🟢 Navegador Google Chrome ou outro navegador baseado em Chromium
+- 🟢 Acesso à plataforma Facebook
+- 🟢 Permissão para instalar extensões em modo desenvolvedor
 
 ---
 
-## 🔍 VERIFICAR AMBIENTE
+# 🔍 FASE 2 — VERIFICAÇÃO DO AMBIENTE
 
 Certifique-se de que:
 
-✔ O Chrome está atualizado  
-✔ A página do Facebook carrega normalmente  
-✔ O modo desenvolvedor está habilitado no navegador  
+- ✔ O Google Chrome está atualizado
+- ✔ A página do Facebook carrega normalmente
+- ✔ O modo desenvolvedor está habilitado no navegador
 
 ---
 
-## 📥 INSTALAÇÃO DA FERRAMENTA
+# 📥 FASE 3 — DOWNLOAD DA FERRAMENTA
 
-📂 Baixar o projeto
+Existem duas formas distintas para realizar o download da ferramenta:
 
-```bash
-git clone https://github.com/manualdeinvestigacaodigital/facebook-raspador-de-dados-web-scraper.git
+1. 📦 Download direto pela página do projeto no GitHub, sem necessidade de instalar o Git.
+2. 🖥️ Download via Git, executando comandos no Prompt de Comando, PowerShell ou Terminal.
 
-🔧 Carregar no Chrome
+A seguir, serão descritas detalhadamente ambas as possibilidades.
 
-Abra o navegador
-Acesse: chrome://extensions/
+---
 
-Ative:
+## 📦 OPÇÃO 1 — DOWNLOAD DIRETO PELA PÁGINA DO PROJETO
 
-✔ Modo do desenvolvedor
+Também é possível baixar a ferramenta diretamente pelo GitHub, sem utilizar o Git.
 
-Clique em:
+### 🌐 Passo a passo
 
-👉 Carregar sem compactação
+1. Acesse o repositório:
 
-Selecione a pasta do projeto
+    https://github.com/manualdeinvestigacaodigital/facebook-raspador-de-dados-web-scraper
 
-✔ A extensão será carregada automaticamente
+2. Clique no botão verde **`<> Code`**.
 
-🌐 EXECUÇÃO
+3. Selecione a opção **`Download ZIP`**.
 
-Acesse uma postagem do Facebook:
+4. Aguarde o download do arquivo compactado.
 
-https://www.facebook.com/reel/ID
+5. Extraia o conteúdo do arquivo ZIP em uma pasta de sua preferência.
 
-https://www.facebook.com/usuario/posts/ID
+---
 
-https://www.facebook.com/photo.php?fbid=ID
+## 🖥️ OPÇÃO 2 — DOWNLOAD VIA GIT
 
-Clique no ícone da extensão para iniciar.
+O Git é uma ferramenta amplamente utilizada para baixar e atualizar projetos hospedados no GitHub.
 
-🚀 FUNCIONAMENTO DA FERRAMENTA
+### 🔎 VERIFICAR SE O GIT ESTÁ INSTALADO
+
+Abra o Prompt de Comando, PowerShell ou Terminal e execute o seguinte comando:
+
+    git --version
+
+### ✅ Resultado esperado
+
+Se o Git estiver instalado corretamente, será exibida uma mensagem semelhante a:
+
+    git version 2.49.0.windows.1
+
+### ❌ Caso o Git não esteja instalado
+
+Se aparecer mensagem informando que o comando `git` não é reconhecido, será necessário instalar o Git.
+
+### 🛠️ INSTALAÇÃO DO GIT NO WINDOWS
+
+#### 🌐 1. Acesse o site oficial do Git
+
+    https://git-scm.com/download/win
+
+#### 📥 2. Baixe o instalador
+
+O download normalmente inicia automaticamente.
+
+#### ▶️ 3. Execute o instalador
+
+Clique duas vezes no arquivo baixado.
+
+#### ⚙️ 4. Instalação recomendada
+
+Durante a instalação:
+
+- ✔ Mantenha as opções padrão
+- ✔ Clique em **Next** em todas as etapas
+- ✔ Ao final, clique em **Install**
+- ✔ Depois, clique em **Finish**
+
+#### 🔄 5. Reinicie o terminal
+
+Feche e abra novamente o Prompt de Comando ou PowerShell.
+
+#### 🔎 6. Teste novamente
+
+    git --version
+
+Se a versão for exibida, o Git foi instalado com sucesso.
+
+### 🚀 CLONAR O REPOSITÓRIO
+
+Após confirmar que o Git está instalado, execute:
+
+    git clone https://github.com/manualdeinvestigacaodigital/facebook-raspador-de-dados-web-scraper.git
+
+O projeto será baixado para uma pasta chamada:
+
+    facebook-raspador-de-dados-web-scraper
+
+---
+
+# 🔧 FASE 4 — INSTALAÇÃO DA EXTENSÃO NO GOOGLE CHROME
+
+Nesta fase, a pasta da ferramenta será carregada no Google Chrome como uma extensão em modo desenvolvedor.
+
+## 🌐 1. ABRIR A PÁGINA DE EXTENSÕES DO CHROME
+
+Abra o Google Chrome e acesse o seguinte endereço:
+
+    chrome://extensions/
+
+## 🛠️ 2. ATIVAR O MODO DESENVOLVEDOR
+
+Após acessar a página de extensões do Chrome, observe o canto superior direito da tela.
+
+Nesse local, haverá um botão escrito **Modo do desenvolvedor**.
+
+- Caso o botão já esteja habilitado, prossiga para a próxima etapa.
+- Caso o botão esteja desabilitado, clique sobre ele ou arraste-o para a direita para habilitar o **Modo do desenvolvedor**.
+
+Quando habilitado, o Chrome passará a exibir opções adicionais para carregamento manual de extensões.
+
+## 📂 3. CARREGAR A EXTENSÃO SEM COMPACTAÇÃO
+
+Com o **Modo do desenvolvedor** habilitado, clique no botão:
+
+- 👉 **Carregar sem compactação**
+
+Em seguida, selecione a pasta do projeto:
+
+- 📁 Se o projeto foi baixado por ZIP, selecione a pasta extraída.
+- 📁 Se o projeto foi baixado por Git, selecione a pasta clonada.
+
+Após selecionar a pasta correta:
+
+- ✔ A extensão será carregada automaticamente no navegador.
+
+---
+
+# 🌐 FASE 5 — EXECUÇÃO DA FERRAMENTA
+
+### 📄 Acesse uma postagem do Facebook em um dos formatos abaixo:
+
+    https://www.facebook.com/reel/ID
+    https://www.facebook.com/usuario/posts/ID
+    https://www.facebook.com/photo.php?fbid=ID
+
+### ▶️ Em seguida:
+
+- Clique no ícone da extensão para iniciar.
+
+---
+
+# 🚀 FASE 6 — FUNCIONAMENTO DA FERRAMENTA
 
 A ferramenta atua diretamente na página do Facebook, coletando dados em tempo real.
 
-📡 COLETA DE DADOS
+## 📡 COLETA DE DADOS
 
 A aplicação realiza:
 
-🔍 Leitura do DOM da página
-🔄 Expansão automática de conteúdo
-📜 Scroll automático de comentários
-💬 Abertura de respostas
+- 🔍 Leitura do DOM da página
+- 🔄 Expansão automática de conteúdo
+- 📜 Scroll automático de comentários
+- 💬 Abertura de respostas
 
-📊 EXTRAÇÃO DE METADADOS
+## 📊 EXTRAÇÃO DE METADADOS
 
 A ferramenta identifica e extrai:
 
-📌 ID da postagem
-👤 Autor (com link)
-📝 Legenda completa
-📅 Data de publicação
-🔗 URL da postagem
+- 📌 ID da postagem
+- 👤 Autor (com link)
+- 📝 Legenda completa
+- 📅 Data de publicação
+- 🔗 URL da postagem
 
-📈 ESTATÍSTICAS
+## 📈 ESTATÍSTICAS
 
 Extração automática de:
 
-👍 Curtidas / reações
-💬 Comentários
-🔁 Compartilhamentos
-👁️ Visualizações (quando aplicável)
+- 👍 Curtidas e reações
+- 💬 Comentários
+- 🔁 Compartilhamentos
+- 👁️ Visualizações (quando aplicável)
 
-🎥 EXTRAÇÃO DE MÍDIA
+## 🎥 EXTRAÇÃO DE MÍDIA
 
 A ferramenta identifica e extrai:
 
-📹 Vídeos (posts e reels)
-🖼️ Imagens (inclusive múltiplas)
-🔗 URLs diretas de mídia
+- 📹 Vídeos (posts e reels)
+- 🖼️ Imagens (inclusive múltiplas)
+- 🔗 URLs diretas de mídia
 
-💬 COLETA DE COMENTÁRIOS
+## 💬 COLETA DE COMENTÁRIOS
 
-🔎 Expansão automática de comentários
-🔁 Coleta de respostas (replies)
-📑 Estruturação hierárquica dos dados
+- 🔎 Expansão automática de comentários
+- 🔁 Coleta de respostas (replies)
+- 📑 Estruturação hierárquica dos dados
 
-✔ Organização em níveis
-✔ Preservação do conteúdo original
+### ✔ Recursos adicionais
 
-🧠 TRATAMENTO DOS DADOS
+- ✔ Organização em níveis
+- ✔ Preservação do conteúdo original
+
+## 🧠 TRATAMENTO DOS DADOS
 
 Os dados são:
 
-✔ Organizados
-✔ Padronizados
-✔ Estruturados para análise
+- ✔ Organizados
+- ✔ Padronizados
+- ✔ Estruturados para análise
 
-📁 GERAÇÃO DE SAÍDAS
+---
+
+# 📁 FASE 7 — GERAÇÃO DE SAÍDAS
 
 A ferramenta gera automaticamente:
 
-📄 HTML estruturado
-🧾 JSON completo
-📑 Relatórios organizados
+- 📄 HTML estruturado
+- 🧾 JSON completo
+- 📑 Relatórios organizados
 
-🔐 INTEGRIDADE DOS DADOS
+---
+
+# 🔐 FASE 8 — INTEGRIDADE DOS DADOS
 
 O sistema realiza geração de hash criptográfico:
 
-🔐 SHA-256
-🔐 SHA-512
+- 🔐 SHA-256
+- 🔐 SHA-512
 
 Aplicados ao conteúdo exportado para garantir:
 
-✔ Integridade
-✔ Autenticidade
-✔ Rastreabilidade
+- ✔ Integridade
+- ✔ Autenticidade
+- ✔ Rastreabilidade
 
-📊 EXPORTAÇÃO
+---
+
+# 📊 FASE 9 — EXPORTAÇÃO
 
 Os dados coletados podem conter:
 
-Metadados da postagem
-Conteúdo textual
-Comentários e respostas
-Links de mídia
-Estrutura hierárquica
+- Metadados da postagem
+- Conteúdo textual
+- Comentários e respostas
+- Links de mídia
+- Estrutura hierárquica
 
-🔄 FLUXO OPERACIONAL
+---
 
-Instalar a extensão
-Abrir postagem no Facebook
-Executar o raspador
-Aguardar coleta automática
-Gerar arquivos (HTML / JSON)
-Analisar os dados
-Validar integridade via hash
+# 🔄 FASE 10 — FLUXO OPERACIONAL
 
-⚠️ LIMITAÇÕES
+1. 📥 Baixar a ferramenta
+2. 🔧 Instalar a extensão no Chrome
+3. 📄 Abrir uma postagem no Facebook
+4. ▶️ Executar o raspador
+5. ⏳ Aguardar a coleta automática
+6. 📁 Gerar arquivos (HTML / JSON)
+7. 📊 Analisar os dados
+8. 🔐 Validar a integridade via hash
+
+---
+
+# ⚠️ FASE 11 — LIMITAÇÕES
 
 [Não verificado] O funcionamento pode variar conforme alterações internas do Facebook, incluindo:
 
-Mudanças no DOM
-Alterações na interface
-Restrições de acesso
-Diferenças entre tipos de postagem
+- Mudanças no DOM
+- Alterações na interface
+- Restrições de acesso
+- Diferenças entre tipos de postagem
 
-⚠️ SEGURANÇA
+---
+
+# ⚠️ FASE 12 — SEGURANÇA
 
 Evite:
 
-❌ Executar em contas sensíveis
-❌ Compartilhar dados sem validação
-❌ Utilizar fora de contexto legal
+- ❌ Executar em contas sensíveis
+- ❌ Compartilhar dados sem validação
+- ❌ Utilizar fora de contexto legal
 
-📚 REFERÊNCIA TÉCNICA E AUTORIA
+---
+
+# 📚 FASE 13 — REFERÊNCIA TÉCNICA E AUTORIA
 
 Este projeto integra um conjunto mais amplo de ferramentas voltadas à investigação digital, inteligência e OSINT.
 
 O autor deste projeto é também autor da obra:
 
-📖 Manual de Investigação Digital — Editora Juspodivm
+📖 **Manual de Investigação Digital — Editora Juspodivm**
 
-🔗 https://www.editorajuspodivm.com.br/authors/page/view/id/206/
+    https://www.editorajuspodivm.com.br/authors/page/view/id/206/
 
 A obra reúne fundamentos teóricos e aplicações práticas voltadas à investigação digital contemporânea.
 
-🧠 INTEGRAÇÃO COM A OBRA
+---
+
+# 🧠 FASE 14 — INTEGRAÇÃO COM A OBRA
 
 Este repositório representa uma aplicação prática das técnicas abordadas no livro, permitindo:
 
-✔ Aplicação de conceitos de OSINT
-✔ Estruturação de coleta de dados
-✔ Organização de evidências
-✔ Apoio à análise investigativa
+- ✔ Aplicação de conceitos de OSINT
+- ✔ Estruturação de coleta de dados
+- ✔ Organização de evidências
+- ✔ Apoio à análise investigativa
 
-👤 AUTOR
+---
 
-Guilherme Caselli
+# 👤 AUTOR
+
+**Guilherme Caselli**
 Delegado de Polícia
-Autor do livro Manual de Investigação Digital
+Autor do livro **Manual de Investigação Digital**
 
-🔗 https://instagram.com/guilhermecaselli
+    https://instagram.com/guilhermecaselli
 
-🔗 https://www.editorajuspodivm.com.br/authors/page/view/id/206/
+    https://www.editorajuspodivm.com.br/authors/page/view/id/206/
 
-🎯 FINALIDADE
+---
 
-🕵️ Investigação digital
-🧠 Inteligência
-🌐 OSINT
-📊 Análise de dados públicos
-📁 Coleta estruturada de evidência digital
+# 🎯 FINALIDADE
+
+- 🕵️ Investigação digital
+- 🧠 Inteligência
+- 🌐 OSINT
+- 📊 Análise de dados públicos
+- 📁 Coleta estruturada de evidência digital
